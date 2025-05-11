@@ -1,3 +1,5 @@
+import { Button } from "@/components/ui/button";
+
 export default function RegistrationPage() {
   return (
     <>
@@ -5,7 +7,7 @@ export default function RegistrationPage() {
       <form action="/api/auth/register" method="POST">
         <label>Email<input type="email" name="email" required/></label>
         <label>Password<input type="password" name="password" required /></label>        
-        <button type="submit">Register</button>
+        <Button type="submit">Register</Button>
       </form>
     </>
   );
